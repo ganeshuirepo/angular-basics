@@ -52,7 +52,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-			"port": 4100,
+			"port": 4200,
             "browserTarget": "my-app:build"
           },
           "configurations": {
