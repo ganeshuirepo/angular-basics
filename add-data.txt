@@ -1,4 +1,0 @@
-[{"isbn":"1223443",
-  "title":"Build web application with MEAN stack",
-  "author": "Ganesh","description":"The tutorial on how to build MEAN stack web application from scratch",
-  "published_year":"2018","publisher":"ganesh" }]
