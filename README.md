@@ -27,4 +27,4 @@ This Repository covers all basic concepts of Angular like:
 		Sample Test case in Protractor (refer e2e folder)
 		
 
-Hope all basic Angular stuff covered, Happy Coding. please feel free to if you found any bugs in existing code..
+Hope all basic Angular stuff covered, Happy Coding. please comment if you found any bugs or need any clarifications in the code..
