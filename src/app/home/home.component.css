@@ -1,0 +1,28 @@
+h3 {
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+  font-size: 1.6em;
+  color: azure;
+  background-color: rgb(72, 74, 201);
+}
+
+.body-content {
+  background-color: rgba(79, 221, 190, 0.788);
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  color: azure;
+}
+.col-9 {
+  border-left: thick solid #3538f3;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 124,
+    "name": "Rama",
+    "email": "rama@gmail.com",
+    "tel": 9505101188
+  },
+  {
+    "id": 125,
+    "name": "Vishnu",
+    "email": "Vishnu@gmail.com",
+    "tel": 9505101188
+  },
+  {
+    "id": 126,
+    "name": "Surya",
+    "email": "Surya@gmail.com",
+    "tel": 9505101188
+  },
+  {
+    "id": 127,
+    "name": "Shani",
+    "email": "Shani@gmail.com",
+    "tel": 9505101188
+  },
+  {
+    "id": 128,
+    "name": "Shiva",
+    "email": "Shiva@gmail.com",
+    "tel": 9505101188
+  },
+  {
+    "id": 129,
+    "name": "Krishna",
+    "email": "Krishna@gmail.com",
+    "tel": 9505101188
+  }
+]

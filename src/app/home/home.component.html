@@ -1,0 +1,33 @@
+
+<head>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" />
+</head>
+<h3>{{childTitle}}</h3>
+<div class="body-content">
+  <div class="row">
+  <div class="col-3">
+			<b> {{ctMsg}}</b>
+			<ul style="list-style-type:none">
+			 <li *ngFor = "let cname of myArray">
+				{{cname}}
+			 </li>
+			</ul>
+    </div>
+    <div class="col-9">
+			<b>{{addMsg}}</b><br/>
+        Student ID: <input (input)="student.id=$event.target.value" /> <br/>
+				First Name:<input (input)="student.fname=$event.target.value" /> <br/>
+				Last Name:<input (input)="student.lname=$event.target.value" />
+				<br/> <button (click)="addStudentData()">Add Student</button>
+
+			<br/><b>{{message}}</b><br/>
+				Message :<input (input)="msg=$event.target.value" />
+        <br/> <button (click)="sendMsg()">Send</button> <br/>
+        TB3:  <input type="text" /> <br/>
+        TB4:  <input type="text" /> <br/>
+    </div>
+
+
+  </div>
+</div>

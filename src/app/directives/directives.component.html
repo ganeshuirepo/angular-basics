@@ -1,0 +1,35 @@
+<div *ngIf="isChecked; then thenBlock else elseBlock"></div>
+<ng-template #thenBlock> Since true 'then block' executed.</ng-template>
+<ng-template #elseBlock> Since false 'else block' executed.</ng-template>
+
+<div *ngIf="isChecked">Old version if Executed.</div>
+
+<div *ngFor="let color of colors">
+  <ul>
+    <li>{{color}}</li>
+  </ul>
+</div>
+  <table border="2">
+    <tr>
+      <th>Seat</th>
+      <th>Type</th>
+      <th>Company</th>
+      <th>Model</th>
+    </tr>
+
+    <ng-template ngFor let-vehicle [ngForOf]="vehicles">
+    <tr>
+      <td>{{vehicle.seat}}</td>
+      <td>{{vehicle.type}}</td>
+      <td>{{vehicle.company}}</td>
+      <td>{{vehicle.Model}}</td>
+    </tr>
+    </ng-template>
+
+  </table>
+  <h4>Rainbow color</h4>
+
+<input type="text" style="height: 30px;font-size:16pt;" appRainbow>
+
+
+

@@ -1,0 +1,47 @@
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" />
+</head>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h3>Employee Form</h3>
+<form #myForm="ngForm" [formGroup]="registerData" (ngSubmit)="onSubmit(myForm)">
+<div class="form-group">
+<label>Emp ID: </label>
+<input type="text" formControlName="empid" class="form-control" name="empid" required />
+    <div *ngIf="registerData.controls.empid.hasError('pattern')"
+                class="validator-error">
+      Enter valid Employee ID
+    </div>
+</div>
+<div class="form-group">
+<label>Emp Name: </label>
+<input type="text" formControlName="empname" class="form-control" name="empname" required />
+    <div *ngIf="registerData.controls.empname.hasError('')"
+                class="validator-error">
+      Enter valid Employee Name
+    </div>
+</div>
+<div class="form-group">
+<label>Emp Email: </label>
+<input type="email" formControlName="empmail" class="form-control" name="empmail" required />
+   <div *ngIf="registerData.controls.empmail.hasError('pattern')"
+                class="validator-error">
+      Enter valid Employee Email
+   </div>
+</div>
+<div class="form-group">
+<input type="submit" class="btn btn-primary" [disabled]="!myForm.form.valid" value="Submit" />
+</div>
+</form>
+
+<div *ngIf="validForm">
+  <h4>The entered details are:</h4>
+{{enterID}} <br/>
+{{enterName}} <br/>
+{{enterMail}}
+        </div>
+     </div>
+   </div>
+</div>

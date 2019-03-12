@@ -1,0 +1,14 @@
+
+
+<h1>{{parentTitle}}</h1>
+			<app-home *ngIf="check"
+				[ctMsg]="cityMsg"
+				[ctArray]="cityArray"
+				[studentAddMsg]="stdAddMsg"
+				(addoneEvent) = "saveData($event)"
+				(sendmsgEvent) = "printMsg($event)" >
+			</app-home>
+
+    Name: {{stdFullName}} <br/>
+    Message: {{msg}}
+
